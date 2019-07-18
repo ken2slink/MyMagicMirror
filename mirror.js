@@ -11,13 +11,6 @@ function getTime() {
     if (hours == 0 && min == 0) getDate();
 }
 
-function getDate() {
-    let dt    = new Date();
-    let day   = dt.getDay();
-    let date  = dt.getDate();
-    let month = dt.getMonth();
-    htmlSet( "date", days[day] + " " + date + " " + months[month] );
-}
 
 /* MODULE METEO */
 function newPrevision() {
